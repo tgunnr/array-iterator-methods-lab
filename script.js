@@ -159,3 +159,90 @@ inventorNamedAda = inventors.find((inventor) => {
 // Check your return value:
 console.log('Exercise 4 My Result: ', inventorNamedAda)
 console.log('Exercise 4 Correct Result: ', { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 })
+
+// Array.prototype.map()
+
+// 5. Use the Array.prototype.map() method to reformat each name in the 'people' array. 
+// The goal is to convert names from "Last, First" format to "First Last" format.
+
+// Hint: Use the String.prototype.split method to separate the first and last names. You can split the string using ', ' as the separator.
+// After splitting the names, rearrange them to the "First Last" format.
+
+let firstLast = []
+
+// Enter your solution code here:
+
+const lastFirst = people.toString().split(',')
+firstLast = lastFirst.map((person) => {
+    let name = person.indexOf()
+
+})
+
+// console.log(lastFirst)
+
+// Check your return value:
+console.log('Exercise 5 My Result: ', firstLast)
+console.log('Exercise 5 Correct Result: ',
+    [
+        'Carl Becker',
+        'Samuel Beckett',
+        'Mick Beddoes',
+        'Henry Beecher',
+        'Ludwig Beethoven',
+        'Menachem Begin',
+        'Hilaire Belloc',
+        'Saul Bellow',
+        'Robert Benchley',
+        'Peter Benenson',
+        'David Ben-Gurion',
+        'Walter Benjamin',
+        'Tony Benn',
+        'Chester Bennington',
+        'Leana Benson',
+        'Silas Bent',
+        'Lloyd Bentsen',
+        'Ric Berger',
+        'Ingmar Bergman',
+        'Luciano Berio',
+        'Milton Berle',
+        'Irving Berlin',
+        'Eric Berne',
+        'Sandra Bernhard',
+        'Yogi Berra',
+        'Halle Berry',
+        'Wendell Berry',
+        'Erin Bethea',
+        'Aneurin Bevan',
+        'Ken Bevel',
+        'Joseph Biden',
+        'Ambrose Bierce',
+        'Steve Biko',
+        'Josh Billings',
+        'Frank Biondo',
+        'Augustine Birrell',
+        'Elk Black',
+        'Robert Blair',
+        'Tony Blair',
+        'William Blake'
+    ]
+)
+
+// Array.prototype.some()
+
+// 6. Determine if there is at least one person in the devs array who is 18 years old or older.
+
+// - You have an array of people with their respective ages.
+// - Use the Array.prototype.some() method to check if any person in the array is 18 years old or older.
+// - Store the result (true or false) in the variable 'isAdultPresent'. 
+
+let isAdultPresent = null
+
+// Enter your solution code here:
+
+isAdultPresent = devs.some((dev) => {
+    return dev.year > 2006
+})
+
+// Check your return value:
+console.log('Exercise 6 My Result: ', isAdultPresent)
+console.log('Exercise 6 Correct Result: ', true)
